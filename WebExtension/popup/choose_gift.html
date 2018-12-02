@@ -1,0 +1,34 @@
+  <!DOCTYPE html>
+
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="choose_gift.css"/>
+  </head>
+
+  <body>
+    <div id="error-content" class="hidden">
+      <p>Addon can't be  launched on this web page.</p><p>Try a different page.</p>
+    </div>
+    <div id="content">
+      <div id="answer">
+      </div>
+      <div id="form_personal_token">
+        personal-token: <input type="text" id="personal-token" type="email" placeholder="personal-token"><br>
+        monica url: <input type="text" id="monica_url" type="email" placeholder="https://app.monicahq.com/"><br>
+        <input type="button" class="submit_token" id="submit_token" value="Submit">
+      </div>
+      <div id="login_succeeded" class="hidden">
+        <div id="gift_form">
+          gift name: <input type="text" id="gift_name" placeholder="name"><br>
+          gift recipient: <input type="text" id="gift_dest" placeholder="Recipient name or lastname"><br>
+        <input type="button" id="submit_gift" class="submit_gift" value="Submit">
+        </div>
+        <div id="gift_result">
+        </div>
+      </div>
+    </div>
+    <script src="choose_gift.js"></script>
+  </body>
+
+  </html>
